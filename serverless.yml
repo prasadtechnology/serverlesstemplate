@@ -39,8 +39,8 @@ package:
   artifact: target/${self:service}-${self:provider.stage}.jar
 
 functions:
-  hello:
-    handler: com.serverless.Handler
+  authenticator:
+    handler: com.serverless.ApiAuthenticationHandler
   createcar:
     handler: com.serverless.car.CreateCarHandler
     events:
